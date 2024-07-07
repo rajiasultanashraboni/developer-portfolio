@@ -57,6 +57,9 @@ nav{
     background-color: #FFF8F3;
     
 }
+.text-center{
+    text-align: center;
+}
 
 /* shared file stop here */
 
@@ -159,5 +162,21 @@ main{
 .sec-description{
     margin-bottom: 30px;
 }
+/* what i do starts here */
+.sect-description{
+    max-width: 940px;
+    margin: 0 auto;
+}
+/* skill section starts here */
+.skills-container{
+    display: flex;
+    gap: 24px;
+    margin-top: 50px;
+ 
+}
 
-.
+.skill{
+    padding: 33px;
+    box-shadow: 0px 6px 50px 0px rgb(0, 0, 0, 0.06);
+    border-radius: 5px;
+}
