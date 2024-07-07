@@ -1,38 +1,42 @@
-
-.open-sans-normal {
-  font-family: "Open Sans", sans-serif;
-  font-weight: <weight>;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
-}
-
-/* header styles */
-.haeder{
-    background-image: url('/images/developer.png'),url('/images/header_bg.png');
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;  /* Ensuring the body and html take full height */
+    font-family: "Open Sans", sans-serif;
+  }
+  
+  body {
+    display: flex;  /* Using flexbox for layout */
+    flex-direction: column;  /* Column layout */
+    min-height: 100vh;  /* Ensuring minimum height is 100% of viewport height */
+  }
+  
+  /* Header Styles */
+  header.haeder {
+    background-image: url('/images/developer.png'), url('/images/header_bg.png');
     background-repeat: no-repeat;
     background-position: top left, bottom right;
     margin-left: 23px;
-    
-}
-
-/* nav Styles */
-nav{
+  }
+  
+  /* Nav Styles */
+  nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 0 200px;
-}
-/* Shared Primary */
-.text-primary{
+  }
+  
+  .text-primary {
     color: #FD6E0A;
-}
-
-.dark-2{
+  }
+  
+  .dark-2 {
     color: #474747;
-}
-
-.btn-primary{
+  }
+  
+  .btn-primary {
     font-weight: bold;
     background-color: #FD6E0A;
     font-size: 20px;
@@ -40,143 +44,216 @@ nav{
     padding: 18px 30px;
     border-radius: 5px;
     border: none;
-}
-
-.section-title{
+    cursor: pointer;
+  }
+  
+  .section-title {
     font-size: 35px;
     font-weight: bold;
     color: #181818;
-}
-
-.section-desc{
+  }
+  
+  .section-desc {
     font-size: 18px;
     color: #757575;
-}
-
-.background-color{
+  }
+  
+  .background-color {
     background-color: #FFF8F3;
-    
-}
-.text-center{
+  }
+  
+  .text-center {
     text-align: center;
-}
-
-/* shared file stop here */
-
-.nav-title{
+  }
+  
+  /* Shared file stop here */
+  .nav-title {
     font-weight: 800;
     font-size: 45px;
-}
-
-
-
-nav ul li{
+  }
+  
+  nav ul li {
     list-style: none;
     margin-right: 50px;
-}
-nav li a{
+  }
+  
+  nav li a {
     text-decoration: none;
     font-size: 20px;
-   
-}
-
-
-
-nav ul{
+  }
+  
+  nav ul {
     display: flex;
     align-items: center;
-}
-
-/* Banner Styles */
-.banner{
+  }
+  
+  /* Banner Styles */
+  .banner {
     display: flex;
     justify-content: space-between;
     margin: 0 35px 0 200px;
-}
-.banner-content{
+  }
+  
+  .banner-content {
     max-width: 585px;
-}
-
-.banner-greetings {
+  }
+  
+  .banner-greetings {
     font-size: 45px;
     font-weight: 600;
     /* ei line ta kaj korche na  */
-    margin-bottom: 5px !important; 
-}
-
-.banner-content .btn-primary{
+    margin-bottom: 0px !important;
+    
+  }
+  
+  .banner-content .btn-primary {
     margin-left: 10px;
-}
-
-.banner-title{
+  }
+  
+  .banner-title {
     font-size: 85px;
     font-weight: 700;
     margin-bottom: 20px;
-    
-}
-
-.banner-para{
+    margin-top: 10px !important;
+  }
+  
+  .banner-para {
     font-size: 18px;
     color: #757575;
     margin-bottom: 30px;
-}
-
-.banner-img{
+  }
+  
+  .banner-img {
     width: 584px;
-}
-
-main{
+  }
+  
+  main {
+    flex: 1;  /* Ensuring main content takes remaining space */
     max-width: 1140px;
-    height: 550px;
     margin: 0 auto;
-}
-
-/* abour styles here */
-
-.about{
+  }
+  
+  /* About Styles */
+  .about {
     border-radius: 10px;
     padding: 130px 150px;
     text-align: center;
     margin-top: 130px;
-
-}
-
-.item-description{
+  }
+  
+  .item-description {
     font-weight: bold;
     font-size: 20px;
     margin: 0;
-    
-}
-.item-title{
+  }
+  
+  .item-title {
     font-size: 20px;
     margin: 0;
-    
-    
-}
-
-.about-items{
+  }
+  
+  .about-items {
     display: flex;
     justify-content: space-around;
-}
-
-.sec-description{
+  }
+  
+  .sec-description {
     margin-bottom: 30px;
-}
-/* what i do starts here */
-.sect-description{
+  }
+  
+  /* What I Do Section */
+  .sect-description {
     max-width: 940px;
     margin: 0 auto;
-}
-/* skill section starts here */
-.skills-container{
+  }
+  
+  /* Skill Section */
+  .skills {
+    margin-top: 130px;
+  }
+  
+  .skills-container {
     display: flex;
     gap: 24px;
     margin-top: 50px;
- 
-}
-
-.skill{
+  }
+  
+  .skill {
     padding: 33px;
     box-shadow: 0px 6px 50px 0px rgb(0, 0, 0, 0.06);
     border-radius: 5px;
-}
+  }
+  
+  /* Resume Section */
+  .resume {
+    margin-top: 130px;
+    margin-bottom: 113px;
+  }
+  
+  .resume-container {
+    display: flex;
+    gap: 71px;
+  }
+  
+  .experience-subtitle {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .experience-description,
+  .experience-subtitle {
+    color: #757575;
+  }
+  
+  .resume hr {
+    margin: 30px 5px;
+  }
+  
+  .resume-download-cv {
+    margin-top: 50px;
+  }
+  
+  /* Footer Styles */
+  footer {
+    background-color: #333;  /* Example background color */
+    color: #fff;
+    padding: 50px 230px;  /* Adjusted padding for footer */
+    display: flex;
+    gap: 100px;
+    position: relative;  /* Removed absolute positioning */
+    width: 100%;
+  }
+  
+  .footer-column {
+    width: 50%;
+  }
+  
+  footer input[type="text"],
+  footer input[type="email"]{
+    height: 30px;
+    border-radius: 5px;
+    display: block;
+    width: 50%;
+    padding: 8px 12px;
+    font-size: 16px;
+    margin-bottom: 24px;
+    border: none;
+  }
+
+  footer textarea{
+    height: 150px;
+    border-radius: 5px;
+    display: block;
+    width: 50%;
+    padding: 8px 12px;
+    font-size: 16px;
+    margin-bottom: 24px;
+    border: none;
+  }
+
+  .footer-desc{
+    width: 562px;
+    font-size: 16px;
+  }
+  
